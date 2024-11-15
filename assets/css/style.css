@@ -621,12 +621,12 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-y: auto;
+  /* overflow-y: auto; */
   overscroll-behavior: contain;
   z-index: 20;
   pointer-events: none;
   visibility: hidden;
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 .modal-container::-webkit-scrollbar { display: none; }
@@ -807,7 +807,7 @@ main {
 }
 
 .link:visited {
-  color: lightblue;
+  color: #87ceeb;
 }
 
 .link:hover {
@@ -1258,6 +1258,10 @@ textarea.form-input::-webkit-resizer { display: none; }
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .modal-content {
   margin: 15% auto;
   padding: 20px;
@@ -1266,7 +1270,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   max-width: 600px;
   text-align: center;
   border-radius: 8px;
-  max-height: 100%;
+  max-height: 90%;
   overflow-y: auto;
 }
 

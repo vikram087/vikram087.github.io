@@ -154,6 +154,7 @@ const projectData = {
 		description:
 			"Garde is a revolutionary fencing platform designed to enhance training by providing real-time AI-driven feedback and analytics to coaches and fencers. The platform integrates advanced video transcoding with FFmpeg, seamless video storage on Cloudflare R2, and low-latency streaming through HTTP Live Streaming (HLS). Garde offers coaches a streamlined dashboard to analyze fencers’ performance through detailed statistics and video playback. Additionally, the system supports full-stack user authentication built from scratch, utilizing JWT tokens for secure sessions and Cloudflare D1 for efficient data management. With Next.js, Garde ensures a modern and responsive frontend, empowering coaches to improve fencer techniques effectively.",
 		github: "https://github.com/GardeFencing",
+		website: "https://gardeai.com",
 	},
 	"icam_materials_database_📌": {
 		description:
@@ -198,31 +199,51 @@ projectItems.forEach((item) => {
 		modalTitles.textContent = title;
 		modalTexts.textContent = category;
 
+		const websiteLink = modalLinks.querySelector(".website-link");
+		if (websiteLink) {
+			websiteLink.remove();
+		}
+
 		if (projectData[key]) {
 			modalDescription.textContent = projectData[key].description;
 			modalLinks.querySelector("a").href = projectData[key].github;
+
+			if (projectData[key].website) {
+				const newLink = document.createElement("a");
+				newLink.href = projectData[key].website;
+				newLink.textContent = "Visit Website";
+				newLink.className = "website-link link";
+				newLink.target = "_blank";
+				newLink.style.display = "block";
+				newLink.style.marginTop = "8px";
+				modalLinks.appendChild(newLink);
+			}
 		} else {
 			modalDescription.textContent = "Description not available.";
 			modalLinks.querySelector("a").href = "https://github.com/vikram087";
 		}
 
 		modal.classList.add("active");
+		document.body.classList.add("no-scroll");
 	});
 });
 
 // Close modal on button click
 closeModal.addEventListener("click", () => {
 	modal.classList.remove("active");
+	document.body.classList.remove("no-scroll");
 });
 
 // Close modal on overlay click
 overlays.addEventListener("click", () => {
 	modal.classList.remove("active");
+	document.body.classList.remove("no-scroll");
 });
 
 // Close modal on outside click (not on modal content)
 modal.addEventListener("click", (event) => {
 	if (!modalContent.contains(event.target)) {
 		modal.classList.remove("active");
+		document.body.classList.remove("no-scroll");
 	}
 });
