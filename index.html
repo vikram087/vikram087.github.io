@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vikram's Personal Website</title>
+
+  <!--
+    - favicon
+  -->
+  <!-- <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon"> -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="./assets/images/favicon_io/site.webmanifest">
+
+  <meta name="description"
+    content="This is Vikram's personal website, showcasing projects, skills, and professional achievements.">
+  <meta name="keywords" content="Vikram Penumarti, Personal Website, Projects, Portfolio, Software Engineer">
+  <meta name="author" content="Vikram Penumarti">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Vikram's Personal Website">
+  <meta property="og:description" content="Explore Vikram's projects, achievements, and professional journey.">
+  <meta property="og:image" content="./assets/images/favicon_io/android-chrome-512x512.png">
+  <meta property="og:url" content="https://vikram-penumarti.com">
+  <meta property="og:type" content="website">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/Headshot.jpg" alt="Vikram Penumarti" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Vikram Penumarti">Vikram Penumarti</h1>
+
+          <p class="title">Software Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:vikram.penumarti@gmail.com" class="contact-link">vikram.penumarti@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+14086630583" class="contact-link">+1 (408) 663-0583</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Sunnyvale, California, USA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/vikram087" target="_blank" rel="noreferrer" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/vikram-penumarti" target="_blank" rel="noreferrer" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm an Undergraduate Student at UC Davis from Sunnyvale, California, who's mainly interested in backend
+            development and cloud infrastructure.
+            I enjoy building large, scalable, low-latency backend systems.
+          </p>
+
+        </section>
+
+        <header>
+          <h2 class="h2 contact-form">Located</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101432.01343229823!2d-122.02386804999999!3d37.3957342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb645a9d05d3b%3A0x768dfb26dd7cc3a2!2sSunnyvale%2C%20CA!5e0!3m2!1sen!2sus!4v1731656427470!5m2!1sen!2sus"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+
+        </section>
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </section>
+
+        </div>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <!-- <li class="timeline-item"> -->
+
+            <h4 class="h4 timeline-item-title">University of California, Davis</h4>
+
+            <span>2022 — 2026</span>
+
+            <p class="timeline-text">
+              Bachelor's of Science in Computer Science
+            </p>
+
+            <p class="timeline-text">3.50/4.0 GPA</p>
+
+            <!-- </li> -->
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">
+                Co-Founder&ensp;|&ensp;<a href="https://gardeai.com" class="link" rel="noreferrer"
+                  target="_blank">Garde</a>
+              </h4>
+
+              <span>October 2023 — Present</span>
+
+              <p class="timeline-text">
+                • Founded fencing platform which gives AI feedback & serves videos to coaches with
+                analytics.<br />
+                • Integrated video transcoding pipeline with <b>FFmpeg</b> for optimal streaming quality.<br />
+                • Implemented HTTP live streaming using <b>Cloudflare R2.</b><br />
+                • Built user auth from scratch, using <b>JWT tokens</b> & <b>Cloudflare
+                  D1</b> storage.<br />
+                • Created <b>Next.js</b> routes to hash & salt passwords, with <b>Cloudflare Worker</b> to add
+                data to
+                <b>D1</b>.<br />
+                • Built <b>Next.js</b> frontend for coaches to view fencer videos & stats stored in <b>Cloudflare R2 &
+                  D1</b>.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Fullstack Developer&ensp;|&ensp;<a href="https://icam-i2cam.org"
+                  class="link" target="_blank" rel="noreferrer">Institute for Complex Adaptive
+                  Matter</a>
+              </h4>
+
+              <span>January 2024 — Present</span>
+
+              <p class="timeline-text">
+                • Architected searchable materials science paper DB with vector search, sorting, filters, &
+                pagination.<br />
+                • Formed <b>Python</b> script with ArXiv API & MatbertNer to compile metadata to
+                <b>Elasticsearch</b>
+                database.<br />
+                • Modeled <b>Flask</b> backend with sentence transformer & <b>HNSW</b> searches to
+                return relevant results.<br />
+                • Utilized <b>Redis</b> to optimize speed by caching, making fetching 91% faster for cached
+                results.<br />
+                • Conceived <b>React.js</b> frontend with query-based search, sorting, filters, & pagination.<br />
+                • Employed <b>Docker</b> & <b>Kubernetes</b> to orchestrate containers, enabling seamless
+                deployment.<br />
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">R&D Intern&ensp;|&ensp;<a href="https://www.fiery.com/" class="link"
+                  target="_blank" rel="noreferrer">Fiery LLC</a></h4>
+
+              <span>June 2024 — September 2024</span>
+
+              <p class="timeline-text">
+                • Produced ETL pipelines on <b>AWS</b> to ingest, normalize, & visualize data.<br />
+                • Used <b>Terraform</b> to setup <b>S3, Quicksight, Glue, Cloudwatch, Lambda, &
+                  API
+                  Gateways</b>.<br />
+                • Designed <b>Python Lambda function</b> used by <b>Gateway</b> to upload files & verify
+                existence on
+                <b>S3</b>.<br />
+                • Built <b>Pyspark</b> script for <b>Glue</b> to validate <b>JSON</b> schemas, normalize data, &
+                move files.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">IT Infrastructure Assistant&ensp;|&ensp;<a
+                  href="https://weimermicrolab.org" target="_blank" class="link" rel="noreferrer">Weimer Microlab</a>
+              </h4>
+
+              <span>October 2023 — June 2024</span>
+
+              <p class=" timeline-text">
+                • Setup <b>HPC Cluster</b> with <b>Slurm</b> for PhD candidates to analyze DNA sequencing
+                data.<br />
+                • Implemented <b>SSH</b> access to cluster so users can access data & submit jobs from
+                anywhere.<br />
+                • Developed <b>Python</b> script to query user data from <b>LDAP</b> database & create posix users
+                locally.<br />
+                • Created shared directories with <b>NFS4</b> to provide <b>HPC cluster</b> with centralized
+                storage.<br />
+                • Organized data across HDDs using <b>Rsync, Python scripts, & Bash scripts</b>.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Work</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Hackathons</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Work</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Hackathons</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="work">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/garde.jpeg" alt="garde" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Garde &#128204;</h3>
+
+                <p class="project-category">October 2023 - Present</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="work">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/icam.jpeg" alt="ICAM" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">ICAM Materials Database &#128204;</h3>
+
+                <p class="project-category">January 2024 - Present</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="hackathons">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/pomodoro.jpeg" alt="ICAM" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Pomodoro &#128204;</h3>
+
+                <p class="project-category">January 2024</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="hackathons">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/shark-proof.jpeg" alt="ICAM" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">SharkProof</h3>
+
+                <p class="project-category">October 2024</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="hackathons">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/climb-gui.jpeg" alt="ICAM" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Climb GUI</h3>
+
+                <p class="project-category">October 2023</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="hackathons">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/helping-hand.jpeg" alt="ICAM" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">HelpingHand</h3>
+
+                <p class="project-category">February 2024</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <div id="portfolio-modal" class="modal-container">
+        <div class="overlay"></div>
+        <div class="modal-content">
+          <button class="modal-close-btn">&times;</button>
+          <div style="display: flex; justify-content: center;">
+            <img src="" alt="" id="modal-img" style="max-width: 100%; margin-bottom: 15px;">
+          </div>
+          <h2 id="modal-title"></h2>
+          <p id="modal-text"></p>
+          <div id="modal-description" style="margin-top: 15px; font-size: 14px; color: #555;"></div>
+          <div id="modal-links" style="margin-top: 15px;">
+            <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+              <a href="https://github.com/vikram087" target="_blank" rel="noreferrer"
+                style="display: flex; align-items: center; text-decoration: none; color: #000;">
+                <ion-icon name="logo-github" style="font-size: 20px; margin-right: 8px;"></ion-icon>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
